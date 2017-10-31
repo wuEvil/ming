@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<div class="ccc">
+			
+		</div>
+		<script src="lib/jquery-3.2.1.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			// 请求api地址
+			var url = "http://h6.duchengjiu.top/shop/api_goods.php";
+
+			var data = {
+				"goods_id": "11",
+			}
+			var a = {};
+			$.ajax({
+				url: url,
+				type: "POST", // 类型
+				data: data,
+				success: function(str) { // 成功时的处理
+					console.log(str);
+					var a = str
+					for (var i =0;i<a.data.length;i++) {
+						console.log(a.data[i].goods_thumb)
+					}
+					
+				}
+			})
+		</script>
+	</body>
+
+</html>
