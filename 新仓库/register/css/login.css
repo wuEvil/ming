@@ -1,0 +1,112 @@
+.u1{
+	width: 400px;
+	height: 48px;
+	border-bottom: 1px solid #d0bfbd;
+}
+.u1 li{
+	float:left;
+	color:#fd6477;
+	/*color: blue;*/
+	cursor: pointer;
+	font-size: 10px;
+	margin-left: 45px;
+	padding: 15px;
+	border-bottom: 1px solid #fe4161;
+	
+}
+
+.u1 .phoneLogin{
+	color:#4f3c3a;
+	border-bottom:none;
+}
+
+.u2{
+	display: block;
+}
+.u22{
+	display: none;
+}
+.u2,.u22{
+	float: left;
+	width: 400px;
+	height: 180px;
+	margin-left: 40px;
+	margin-top: 20px;
+}
+.u2 li,.u22 div{
+	width: 300px;
+	height : 40px;
+	padding: 10px;
+}
+.u2 li input {
+	outline: none;/*点击输入框时没有显示边框*/
+	width: 300px;
+	height : 30px;
+	border:1px solid #d3c2bf;
+	font-size: 100%;
+	padding: 5px;
+	background: #fddad7;
+	
+}
+.u22 div{
+	width: 293px;
+}
+.u22 div input{
+	outline: none;/*点击输入框时没有显示边框*/
+	border:1px solid #d3c2bf;
+	padding: 5px;
+	height: 30px;
+	background: #fddad7;
+	float: left;
+}
+.username,.button{
+	width: 267px;
+	
+}
+.u2 #button,.u22 .button{
+	box-sizing: content-box;
+	background: #fd536f;
+	color:white;
+	cursor: pointer;
+}
+/*清除浮动*/
+.u3::ater{
+	content: "";
+	clear: both;
+}
+.u3 li{
+	float: left;
+	width: 78px;
+	height: 18px;
+	margin-left: 50px;
+	margin-top: 10px;
+}
+.u3 li a{
+	color:#473432;
+}
+.u3 li a span{
+	float: right;
+	line-height: 18px;
+	font-size: 10px;
+	
+}
+.u4{
+	float: left;
+	width: 142px;
+	height:14px;
+	margin-left: 245px;
+	margin-top: 20px;
+}
+.u4 li{
+	float:left;
+	
+}
+.u4 li a{
+	text-decoration:underline;
+	color:#9f8c8a;
+	font-size:8px;
+	padding: 5px;
+}
+.u4 li .forgetPassword{
+	color:#fc5570;
+}

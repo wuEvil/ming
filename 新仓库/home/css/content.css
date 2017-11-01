@@ -3,6 +3,7 @@ body {
 	background: #FFF;
 }
 
+
 .mmp,
 .mmp-3 {
 	width: 97%;
@@ -43,3 +44,10 @@ body {
 	text-overflow: ellipsis;
 	white-space: nowrap;
 }
+
+.fix {
+        position:fixed;
+        top:0;
+        left:0;
+        margin: 0 auto;
+    }

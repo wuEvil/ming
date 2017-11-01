@@ -1,0 +1,59 @@
+.u1{
+	width: 400px;
+	height: 48px;
+	border-bottom: 1px solid #d0bcbb;
+}
+.u1 li{
+	float:left;
+	color:black;
+	font-size: 15px;
+	margin-left: 26px;
+	padding: 15px;
+	
+}
+.u2{
+	width: 400px;
+	height: 180px;
+	margin-left: 40px;
+	margin-top: 20px;
+}
+.u2 div{
+	width: 293px;
+	margin-top: 20px;
+}
+.u2 div input{
+	outline: none;/*点击输入框时没有显示边框*/
+	border:1px solid #d3c2bf;
+	width: 280px;/*三个input框宽度一致*/
+	padding: 5px;
+	height: 30px;
+	background: #fddad7;
+}
+/*.username,.button{
+	width: 280px;
+}*/
+.u2 .button,.u2 #button{
+	box-sizing: content-box;
+	background: #fd536f;
+	cursor: pointer;
+}
+.u3{
+	margin-left: 40px;
+	margin-top: 10px;
+}
+.u3 span,.u3 a{
+	font-size: 12px;
+	color:#818080;
+	
+}
+.u3 a{
+	text-decoration: underline;
+}
+.u4 a{
+	float: right;
+	font-size: 12px;
+	color:#818080;
+	margin-right: 68px;
+	margin-top: 20px;
+	text-decoration: underline;
+}

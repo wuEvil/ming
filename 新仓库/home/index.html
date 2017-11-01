@@ -27,10 +27,10 @@
 								<a href="#"> <em class="qq"></em>QQ登录</a>
 							</li>
 							<li>
-								<a href="#">登录</a>
+								<a href="../register/login.html"target="_blank">登录</a>
 							</li>
 							<li>
-								<a href="#">注册</a>
+								<a href="../register/register.html"target="_blank">注册</a>
 							</li>
 							<li class="drop">
 								<a href="#" target="_blank"> <em class="collect"></em>我的收藏 </a>
@@ -44,7 +44,7 @@
 								</ul>
 							</li>
 							<li class="drop cart-wrapper">
-								<a target="_blank" href="#" class="my-cart"> <em class="cart"></em>我的购物车 </a>
+								<a target="_blank" href="../shoppingCart/index.html" class="my-cart"> <em class="cart"></em>我的购物车 </a>
 							</li>
 							<li>
 								<a href="#" target="_blank"> <em class="order"></em>我的订单</a>
@@ -137,18 +137,20 @@
 		</div>
 
 		<div id="M_P_content">
-			<img style="margin: 0 auto;" src="https://s11.mogucdn.com/mlcdn/c45406/171023_4c14kghj43b2g1hgl47i5gbl6j4ab_1200x400.jpg" />
+			<img style="margin: 10px auto;" src="https://s11.mogucdn.com/mlcdn/c45406/171023_4c14kghj43b2g1hgl47i5gbl6j4ab_1200x400.jpg" />
 
 			<div class="nav">
 				<div class="nav-head">
-					<a href="#" class="nav-head-a">今天新品</a>
-					<a href="#" class="nav-head-a">本周优选</a>
-					<a href="#" class="nav-head-ax">查看更多>></a>
+					<h2 style="text-align: center; margin: 5px 0px;"><a href="#" class="nav-head-a">今天新品</a>
+					<a href="#" class="nav-head-a">本周优选</a><span style="font-size: 12px;float: right;">
+						<a href="#" class="nav-head-ax">查看更多>></a>
+					</span></h2>
+					
 				</div>
 				<div class="nav-con">
 				</div>
 				<div class="nav-head">
-					<a href="#" class="nav-head-a">美丽优选</a>
+					<h2><a href="#" class="nav-head-a">美丽优选</a></h2>
 				</div>
 				<div class="nav-mmp">
 
@@ -256,44 +258,6 @@
 		<script type="text/javascript" src="lib/jquery.mousewheel.js"></script>
 		<script type="text/javascript" src="lib/jquery-ui.js"></script>
 		<script type="text/javascript" src="js/burst.js"></script>
-		<script>
-			var url = "http://h6.duchengjiu.top/shop/api_goods.php";
-
-			var a = [];
-			$.ajax({
-				url: url,
-				type: "get", // 类型
-				success: function(str) { // 成功时的处理
-					console.log(str);
-					a = str.data;
-					for(var i = 0; i < 6; i++) {
-						$(".nav-con").append("<div class='nav-content'></div>")
-						$(".nav-content").eq(i).append("<div class='mmp'></div>");
-						$(".nav-content").eq(i).append("<div class='mmp-two'></div>");
-						$(".mmp").eq(i).css('background-image', 'url(' + a[i].goods_thumb + ')');
-						//console.log(a[i].goods_thumb);
-					};
-
-					for(var j = 0; j < a.length - (a.length % 3); j++) {
-
-						$(".nav-mmp").append("<div class='nav-content-one'></div>")
-						$(".nav-content-one").eq(j).append("<div class='mmp-3'></div>");
-						$(".nav-content-one").eq(j).append("<div class='mmp-4'style='color: red;'><p>￥"+a[j].price+"</p></div>");
-						$(".nav-content-one").eq(j).append("<div class='mmp-4'><p>"+a[j].goods_name+"</p></div>");
-						$(".mmp-3").eq(j).css('background-image', 'url('+a[j].goods_thumb+')');
-
-					}
-					$(".nav-content-one").click(
-						function() {
-							window.location.href="Leaflet.html?good_id="+$(this)[0].innerHTML
-							console.log($(this))
-						}
-					)
-				}
-			}) //			$(".nav-content-one").eq(i).click(
-			//				console.log("sss")
-			//			)
-		</script>
 	</body>
 
 </html>
