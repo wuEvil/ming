@@ -7,6 +7,22 @@ li{
 }
 a{
 	text-decoration: none;
+	
+}
+
+.fixed{
+	width: 260px;
+	height:40px;
+	border-radius: 10px 10px ;
+	background:rgba(187, 99, 115, 0.33);
+	color: white;
+	position:absolute;
+	top: 142px;
+	left: 72%;
+	text-align: center;
+	line-height: 40px;
+	display: none;
+	
 }
 /*header start*/
 .header{
@@ -47,7 +63,7 @@ a{
 }
 .loginBox{
 	width: 400px;
-	height: 348px;
+	/*height: 348px;*/
 	background: #fedbd8;
 	float: right;
 	margin-top:80px ;

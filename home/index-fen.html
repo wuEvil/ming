@@ -3,7 +3,7 @@
 
 	<head>
 		<meta charset="UTF-8">
-		<title>美丽说-潮流穿搭快人一步</title>
+		<title>分类详情</title>
 		<link rel="icon" href="https://s10.mogucdn.com/mlcdn/c45406/170612_02i668aijej2cb21ji56g98a218dg_48x48.png" type="image/x-icon">
 		<link rel="stylesheet" type="text/css" href="css/sidebar.css" />
 		<link rel="stylesheet" type="text/css" href="css/logoSeek.css" />
@@ -20,17 +20,17 @@
 							<li class="go-home">
 								<a href="#"> <em class="home"></em>美丽说首页</a>
 							</li>
-							<li>
+							<li class="userinfo">
 								<a href="#"><em class="weixin"></em>微信登录</a>
 							</li>
-							<li>
+							<li class="userinfo">
 								<a href="#"> <em class="qq"></em>QQ登录</a>
 							</li>
-							<li>
-								<a href="#">登录</a>
+							<li class="userinfo">
+								<a href="../register/login.html" target="_blank">登录</a>
 							</li>
-							<li>
-								<a href="#">注册</a>
+							<li class="userinfo">
+								<a href="../register/register.html" target="_blank">注册</a>
 							</li>
 							<li class="drop">
 								<a href="#" target="_blank"> <em class="collect"></em>我的收藏 </a>
@@ -44,7 +44,7 @@
 								</ul>
 							</li>
 							<li class="drop cart-wrapper">
-								<a target="_blank" href="#" class="my-cart"> <em class="cart"></em>我的购物车 </a>
+								<a target="_blank" href="../shoppingCart/index.html" class="my-cart"> <em class="cart"></em>我的购物车 </a>
 							</li>
 							<li>
 								<a href="#" target="_blank"> <em class="order"></em>我的订单</a>
@@ -137,9 +137,23 @@
 		</div>
 
 		<div id="M_P_content">
-			
+			<img style="margin: 10px auto;" src="https://s11.mogucdn.com/mlcdn/c45406/171023_4c14kghj43b2g1hgl47i5gbl6j4ab_1200x400.jpg" />
+
 			<div class="nav">
-				<div class="nav-con-Leafket">
+				<div class="nav-head">
+					<h2 style="text-align: center; margin: 5px 0px;"><a href="#" class="nav-head-a">今天新品</a>
+					<a href="#" class="nav-head-a">本周优选</a><span style="font-size: 12px;float: right;">
+						<a href="#" class="nav-head-ax">查看更多>></a>
+					</span></h2>
+
+				</div>
+				<div class="nav-con">
+				</div>
+				<div class="nav-head">
+					<h2 style="margin: 10px auto; font-size: 30px;"><a href="#" class="nav-head-a" >美丽优选</a></h2>
+				</div>
+				<div class="nav-mmp">
+
 				</div>
 			</div>
 
@@ -244,22 +258,6 @@
 		<script type="text/javascript" src="lib/jquery.mousewheel.js"></script>
 		<script type="text/javascript" src="lib/jquery-ui.js"></script>
 		<script type="text/javascript" src="js/burst.js"></script>
-
 	</body>
-
-	<script type="text/javascript">
-		var dizhi = window.location.href
-		var s = "",c="";
-		function GetArgsFromHref(sHref) {
-			var args = sHref.split("&quot;");
-//			console.log(args)
-			args = args.splice("?")
-//			console.log(args)
-			s = args[1]
-			return s
-		}
-		GetArgsFromHref(dizhi)
-		$(".left").append("<div style='width: 400px;height: 400px;background-image: url("+s+")'>"+ +"</div>")
-	</script>
 
 </html>

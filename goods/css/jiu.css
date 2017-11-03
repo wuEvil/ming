@@ -1,0 +1,150 @@
+
+
+*{
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.bulk{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    font-size: 12px;
+}
+.left{
+    width: 500px;
+    height: 500px;
+    float: left;
+}
+.right{
+    width: 690px;
+    float: left;
+}
+.right-name{
+    width: 640px;
+    font-size: 24px;
+    height: 100px;
+}
+.right-price{
+    width: 630px;
+    height: 32px;
+    margin: 5px;
+}
+.price-p{
+    width: 80px;
+    float: left;
+    height: 32px;
+    line-height: 32px;
+}
+.price-d{
+    width: 550px;
+    height: 32px;
+    font-size: 32px;
+    color: red;
+}
+.service-d{
+    width: 550px;
+    height: 20px;
+    line-height: 32px;
+}
+.right-service{
+    width: 630px;
+    height: 32px;
+    margin: 5px;
+}
+.right-color{
+    width: 630px;
+    margin: 5px;
+}
+.right-size{
+    width: 630px;
+    height: 50px;
+}
+.size-o{
+    width: 550px;
+    height: 35px;
+}
+.size-o li{
+    width: 40px;
+    height: 30px;
+    float: left;
+    margin: 0 10px 5px 0;
+    text-indent : 5px;
+    border: 1px solid #ddd;
+    text-align:center;
+}
+.right-number{
+    width: 550px;
+    height: 25px;
+}
+.number-ipt{
+    width: 50px;
+    height: 25px;
+    float: left;
+}
+.number-zz{
+    width: 22px;
+    height: 25px;
+    float: left;
+    margin: 0 5px;
+    display: inline-block;
+}
+.right-onc{
+    width: 630px;
+    height: 75px;
+}
+.onc-1{
+    width: 200px;
+    height: 50px;
+    line-height: 48px;
+    text-align: center;
+    display: inline-block;
+    color: #fff;
+    background: red;
+    border: 1px solid #8c939d;
+    text-decoration:none;
+    margin-top: 10px;
+}
+.onc-2{
+    width: 200px;
+    height: 50px;
+    line-height: 48px;
+    text-align: center;
+    display: inline-block;
+    background: #fff;
+    border: 1px solid #8c939d;
+    text-decoration:none;
+    color: black;
+    margin-top: 10px;
+}
+.right-serve{
+    width: 630px;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    margin: 10px 0;
+}
+.right-serve li{
+    width: 540px;
+    height: 30px;
+    float: left;
+}
+.right-serve ul{
+    width: 540px;
+    height: 30px;
+    float: left;
+}
+.right-pay{
+    width: 630px;
+    height: 32px;
+    line-height: 20px;
+    float: left;
+}
+.pay-q{
+    width: 540px;
+    height: 30px;
+    float: left;
+    margin-top: 5px;
+}
